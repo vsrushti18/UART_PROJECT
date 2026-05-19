@@ -1,0 +1,155 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/fetools/work_area/frontend/Batch_11/srushti/UART_PROJECT/src/design
+T_opt
+!s110 1779167428
+V7cCDPM=1]ja?QLJ1o2HDN3
+04 7 4 work uart_tb fast 0
+=1-6805caf5892e-6a0bf0c4-c3a1-21bc4
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OE;O;10.6c;65
+T_opt1
+!s110 1779164592
+Vh1dmm8cB2kPo3m09b^_Xz2
+04 4 4 work uart fast 0
+=1-6805caf5892e-6a0be5b0-39b40-1701c
+R1
+R2
+n@_opt1
+R3
+R0
+vref
+Z4 !s110 1779167418
+!i10b 1
+!s100 DI[iEo;aOPFXcTP5R>:km2
+I8G=beF6DM3T2_IMO^fAKe0
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1779166046
+8ref.v
+Fref.v
+L0 1
+Z6 OE;L;10.6c;65
+r1
+!s85 0
+31
+Z7 !s108 1779167418.000000
+Z8 !s107 ref.v|u_rec.v|u_xmit.v|u_baud.v|uart.v|uart_tb.v|
+Z9 !s90 uart_tb.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vu_baud
+R4
+!i10b 1
+!s100 _o`Z@2i[V4U^HU3mVmR<a3
+I3kgR2a@UhFRbFi1=Q9;8`3
+R5
+R0
+w1779039197
+8u_baud.v
+Fu_baud.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
+vu_rec
+R4
+!i10b 1
+!s100 miW2Na6K8XB]:j_Gm6cZz0
+I>o7fgI_?di?6<:CSB8hhW2
+R5
+R0
+w1779167410
+8u_rec.v
+Fu_rec.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
+vu_xmit
+R4
+!i10b 1
+!s100 OPlTdkGbKMzOn7NJ`0dCS3
+IikOgY:4Z6?zN@@R@5DIdZ2
+R5
+R0
+w1779041062
+8u_xmit.v
+Fu_xmit.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
+vuart
+R4
+!i10b 1
+!s100 z@MVR[N]_?<ceh6>kLOZz0
+IFCl4fD:9FmOlaPZRNGZjX2
+R5
+R0
+w1779035784
+8uart.v
+Fuart.v
+L0 6
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
+vuart_tb
+R4
+!i10b 1
+!s100 GJKcJK9UA3zbi1;bEizlE3
+Il[k[mR`]CIGLj@Ao>do333
+R5
+R0
+w1779164738
+8uart_tb.v
+Fuart_tb.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2

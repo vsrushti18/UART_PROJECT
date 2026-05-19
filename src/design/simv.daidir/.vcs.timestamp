@@ -1,0 +1,79 @@
+0 
+24
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/include
+-Mxllcflags=
+-V
+-Xvcs_run_simv=1
+-full64
+-gen_obj
+-picarchive
+/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1
+uart_tb.v
+37
+XDG_DATA_DIRS=/home/srushtivadnere/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VMR_MODE_FLAG=64
+VERDI_HOME=/fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8
+VENDOR=unknown
+VC_STATIC_HOME=/fetools/synopsys/installed_tools/vc_static/U-2023.03-1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64
+SSH_TTY=/dev/pts/220
+SSH_CONNECTION=103.189.135.45 14901 192.168.1.16 22
+SSH_CLIENT=103.189.135.45 14901 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPYGLASS_HOME=/fetools/synopsys/installed_tools/spyglass/S-2021.09-SP1/SPYGLASS_HOME
+SNPSLMD_QUEUE=true
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=103.189.135.45
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+Prime_HOME=/fetools/synopsys/installed_tools/primetime/prime/S-2021.06-SP2
+OVA_UUM=0
+OSTYPE=linux
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+ICC_HOME=/fetools/synopsys/installed_tools/icc2/Q-2019.12-SP1
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GROUP=srushtivadnere
+FORMALITY=/fetools/synopsys/installed_tools/Formality/fm/S-2021.06-SP2
+DC_HOME=/fetools/synopsys/installed_tools/syn/S-2021.06-SP4
+0
+6
+1779016680 ref.v
+1779097352 u_rec.v
+1779041062 u_xmit.v
+1779039197 u_baud.v
+1779035784 uart.v
+1779097603 uart_tb.v
+4
+1631417060 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so
+1631416743 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so
+1631416702 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so
+1631416739 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so
+1779100451 simv.daidir
+-1 partitionlib
