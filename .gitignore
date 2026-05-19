@@ -2,3 +2,6 @@ csrc/
 simv
 simv.daidir/
 ucli.key
+work/
+transcript
+uart_tb.vcd
