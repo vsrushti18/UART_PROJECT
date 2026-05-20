@@ -71,7 +71,7 @@
                         bcnt <= bcnt + 1;
                     end
                 end else begin 
-                    if(ccnt==7) begin
+                    if(ccnt==6) begin
                         rec_dataH = {rx_ff2, rec_dataH[WORD_LEN-1:1]};
                     end
                     ccnt <= ccnt + 1;

@@ -15,26 +15,26 @@ module u_xmit #(
                DATA  = 2'b10,
                STOP  = 2'b11;
 
-    reg [1:0]          st;
+    reg [1:0] st;
     reg [WORD_LEN-1:0] sh_reg;
-    reg [2:0]          bcnt;
-    reg [3:0]          ccnt;
+    reg [2:0] bcnt;
+    reg [3:0] ccnt;
 
     reg tx_req;
     reg [WORD_LEN-1:0]tx_data_req;
 
     always@(posedge uart_clk or negedge sys_rst_l) begin
-    	if(!sys_rst_l) begin
-		tx_req <= 1'b0;
-		tx_data_req <= 0;
-	end else begin
-		if(xmitH && !tx_req && st ==IDLE) begin
-			tx_req <= 1'b1;
-			tx_data_req <= xmit_dataH;
-		end else if(st==START) begin
-			tx_req <= 1'b0;
-		end
-	end
+        if(!sys_rst_l) begin
+                tx_req <= 1'b0;
+                tx_data_req <= 0;
+        end else begin
+                if(xmitH && !tx_req && st ==IDLE) begin
+                        tx_req <= 1'b1;
+                        tx_data_req <= xmit_dataH;
+                end else if(st==START) begin
+                        tx_req <= 1'b0;
+                end
+        end
     end
 
     always @(posedge uart_clk or negedge sys_rst_l) begin
@@ -59,19 +59,19 @@ module u_xmit #(
             bcnt <= 0;
 
             if(tx_req) begin
-                xmit_doneH <= 1'b0;
                 sh_reg <= tx_data_req;
                 st <= START;
-                uart_xmit_dataH <= 1'b0; 
-                xmit_active <= 1'b1;
+                uart_xmit_dataH <= 1'b0;
             end
         end
 
         START: begin
-	    uart_xmit_dataH <= 1'b0;
-            if(ccnt == 15) begin
+            uart_xmit_dataH <= 1'b0;
+            if(ccnt == 14) begin
                 ccnt <= 0;
                 st   <= DATA;
+                xmit_doneH <= 1'b0;
+                xmit_active <= 1'b1;
                 bcnt <= 0;
             end else begin
                 ccnt <= ccnt + 1;
@@ -111,8 +111,14 @@ module u_xmit #(
         end
 
         default: begin
-		st <= IDLE;
-	end
+                st <= IDLE;
+                uart_xmit_dataH <= 1;
+                xmit_doneH <= 1;
+                xmit_active <= 0;
+                ccnt <= 0;
+                bcnt <= 0;
+        end
+
         endcase
     end
 end
