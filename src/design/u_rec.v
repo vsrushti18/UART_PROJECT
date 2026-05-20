@@ -12,7 +12,7 @@
     );
 
     parameter idle = 2'b00, start = 2'b01, data = 2'b10, stop = 2'b11;
-
+   
     reg [1:0] st;
     reg [WORD_LEN-1:0] sh_reg;
     reg [2:0] bcnt;
@@ -36,7 +36,6 @@
             rx_ff2 <= rx_ff1;
             case(st)
             idle: begin
-                rec_dataH  <= 0;
                 rec_busy <= 0;
                 ccnt<=0;
                 bcnt<=0;
@@ -72,7 +71,7 @@
                     end
                 end else begin 
                     if(ccnt==6) begin
-                        rec_dataH = {rx_ff2, rec_dataH[WORD_LEN-1:1]};
+                        sh_reg = {rx_ff2, sh_reg[WORD_LEN-1:1]};
                     end
                     ccnt <= ccnt + 1;
                 end
@@ -84,10 +83,11 @@
                     if(rx_ff2==1'b1) begin
                         rec_busy <= 1'b0;
                         rec_readyH <= 1'b1;
+                        rec_dataH <= sh_reg;
                     end else begin
                         rec_busy <= 1'b0;
                         rec_readyH <= 1'b0;
-                        rec_dataH <= 0;
+                        rec_dataH <= rec_dataH;
                     end
                 end else begin
                     ccnt <= ccnt + 1;
